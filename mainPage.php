@@ -78,26 +78,14 @@ error_reporting(E_ALL);
     </div>
 
     <!--Container Main end-->
-    <div style = "padding-top : 100px">  
-        <button onclick="sendMessage('haut')">Haut</button>
-        <button onclick="sendMessage('bas')">Bas</button>
-        <button onclick="sendMessage('gauche')">Gauche</button>
-        <button onclick="sendMessage('droite')">Droite</button>
-        <button onclick="sendMessage('allumer')">Allumer</button>
-        <button onclick="sendMessage('eteindre')">Éteindre</button>
+    <div id="buttonDiv">  
+        <button id="hautButton" onclick="sendMessage('haut')">Haut</button>
+        <button id="basButton" onclick="sendMessage('bas')">Bas</button>
+        <button id="gaucheButton" onclick="sendMessage('gauche')">Gauche</button>
+        <button id="droiteButton" onclick="sendMessage('droite')">Droite</button>
+        <button id="allumerButton" onclick="sendMessage('allumer')">Allumer</button>
+        <button id="eteindreButton" onclick="sendMessage('eteindre')">Éteindre</button>
     </div>
-
-<style>
-    /* Ajoutez une règle de style pour le dernier marqueur */
-    .last-marker {
-        background-color: red;
-        color: white;
-        border-radius: 50%;
-        text-align: center;
-        padding: 5px;
-        font-weight: bold;
-    }
-</style>
 
     <script>
         document.addEventListener("DOMContentLoaded", function(event) {
