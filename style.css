@@ -195,7 +195,9 @@ a {
 #droiteButton,
 #allumerButton,
 #eteindreButton,
-#resetButton {
+#resetButton,
+#nonButton,
+#ouiButton {
     width: 80px;
     height: 40px;
     border: none;
@@ -208,44 +210,48 @@ a {
 }
 
 #hautButton {
-    top: 80px;
+    top: 20%;
     left: 50%;
-    /*transform: translate(-50%, -50%) rotate(270deg);*/
 }
 
 #basButton {
-    top: 220px;
+    bottom: 10px;
     left: 50%;
-    /*transform: translate(-50%, 50%) rotate(90deg);*/
 }
 
 #gaucheButton {
-    top: 150px;
-    left: 40%;
-    /*transform: translate(-50%, -50%) rotate(180deg);*/
+    top: 50%;
+    left: 25%;
 }
 
 #droiteButton {
-    top: 150px;
-    left: 60%;
-    /*transform: translate(50%, -50%) rotate(0deg);*/
+    top: 50%;
+    right: 25%;
 }
 
 #allumerButton {
-    top: 75px;
-    left: 25%;
-    /*transform: translate(50%, 0);*/
+    top: 10%;
+    left: 20%;
 }
 
 
 #eteindreButton {
-    top: 75px;
-    right: 25%;
-    /*transform: translate(50%, 0);*/
+    top: 10%;
+    right: 20%;
 }
 
 #resetButton {
-    top: 160px;
-    
-    /*transform: translate(50%, 0);*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#ouiButton {
+    bottom : 25%;
+    right: 25%;
+}
+
+#nonButton {
+    bottom : 25%;
+    left : 25%;
 }

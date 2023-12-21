@@ -86,6 +86,8 @@ error_reporting(E_ALL);
         <button id="allumerButton" onclick="sendMessage('allumer')">Allumer</button>
         <button id="eteindreButton" onclick="sendMessage('eteindre')">Éteindre</button>
         <button id="resetButton" onclick="sendMessage('reset')">Reset</button>
+        <button id="ouiButton" onclick="sendMessage('oui')">Oui</button>
+        <button id="nonButton" onclick="sendMessage('non')">Non</button>
     </div>
 
     <script>
