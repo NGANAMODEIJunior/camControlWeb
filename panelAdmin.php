@@ -66,7 +66,7 @@ include("class/User.php");
             <nav class="nav">
                 <div> <a href="mainPage.php" class="nav_logo"> <i class='bx bx-layer nav_logo-icon'></i> <span class="nav_logo-name">Appli GPS</span> </a>
                     <div class="nav_list">
-                        <a href="mainPage.php" class="nav_link active">
+                        <a href="mainPage.php" class="nav_link ">
                             <i class='bx bx-grid-alt nav_icon'></i>
                             <span class="nav_name">Home</span>
                         </a>
@@ -77,7 +77,7 @@ include("class/User.php");
                     </div>
                     <?php
                     if ($User->isAdmin()) {
-                        echo '<a href="panelAdmin.php" class="nav_link">
+                        echo '<a href="panelAdmin.php" class="nav_link active">
         <i class="bx bx-cog nav_icon"></i>
         <span class="nav_name">Panel Admin</span>
     </a>';

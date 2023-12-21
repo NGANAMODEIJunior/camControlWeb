@@ -73,7 +73,7 @@ error_reporting(E_ALL);
     </a>';
                 }
                 ?>
-            </div> <a href="logout.php" class="nav_link"> <i class='bx bx-log-out nav_icon'></i> <span class="nav_name">SignOut</span> </a>
+            </div> <a href="logout.php" class="nav_link"> <i class='bx bx-log-out nav_icon'></i> <span class="nav_name">Se déconnecter</span> </a>
         </nav>
     </div>
 
@@ -85,6 +85,7 @@ error_reporting(E_ALL);
         <button id="droiteButton" onclick="sendMessage('droite')">Droite</button>
         <button id="allumerButton" onclick="sendMessage('allumer')">Allumer</button>
         <button id="eteindreButton" onclick="sendMessage('eteindre')">Éteindre</button>
+        <button id="resetButton" onclick="sendMessage('reset')">Reset</button>
     </div>
 
     <script>

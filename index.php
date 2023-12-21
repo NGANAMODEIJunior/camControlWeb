@@ -49,7 +49,6 @@ include("class/User.php");
     //création de l'objet user
     $User = new User(null, null, null, null);
     $errorMessage = ""; // Variable pour stocker le message d'erreur
-    echo $_SESSION['Connexion'];
 
     //on vérifie si le bouton connexion est cliqué
     //on connecté le User, si il y a une erreur on affiche mess d'erreur
