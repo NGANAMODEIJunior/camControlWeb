@@ -78,17 +78,73 @@ error_reporting(E_ALL);
     </div>
 
     <!--Container Main end-->
-    <div id="buttonDiv">  
-        <button id="hautButton" onclick="sendMessage('haut')">Haut</button>
-        <button id="basButton" onclick="sendMessage('bas')">Bas</button>
-        <button id="gaucheButton" onclick="sendMessage('gauche')">Gauche</button>
-        <button id="droiteButton" onclick="sendMessage('droite')">Droite</button>
-        <button id="allumerButton" onclick="sendMessage('allumer')">Allumer</button>
-        <button id="eteindreButton" onclick="sendMessage('eteindre')">Éteindre</button>
-        <button id="resetButton" onclick="sendMessage('reset')">Reset</button>
-        <button id="ouiButton" onclick="sendMessage('oui')">Oui</button>
-        <button id="nonButton" onclick="sendMessage('non')">Non</button>
-    </div>
+
+    <!-- Code to handle the camera angle -->
+<input tabindex="-1" type="radio" name="cam" id="cam1" />
+<input tabindex="-1" type="radio" name="cam" id="cam2" />
+<input tabindex="-1" type="radio" name="cam" id="cam3" />
+<input tabindex="-1" type="radio" name="cam" id="cam4" />
+<input tabindex="-1" type="radio" name="cam" id="cam5" checked />
+<input tabindex="-1" type="radio" name="cam" id="cam6" />
+<input tabindex="-1" type="radio" name="cam" id="cam7" />
+<input tabindex="-1" type="radio" name="cam" id="cam8" />
+<input tabindex="-1" type="radio" name="cam" id="cam9" />
+
+<div id="camera">
+  <label for="cam1"></label>
+  <label for="cam2"></label>
+  <label for="cam3"></label>
+  <label for="cam4"></label>
+  <label for="cam5"></label>
+  <label for="cam6"></label>
+  <label for="cam7"></label>
+  <label for="cam8"></label>
+  <label for="cam9"></label>
+</div>
+
+
+<article id="snes-gamepad" aria-label="SNES controller">
+  <!-- cord -->
+  <div id="cord"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+  
+  <!-- Buttons on top-->
+  <button id="l" class="is3d">Top left<div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></button>
+  <button id="r" class="is3d">Top Right<div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></button>
+  
+  <!-- frame -->
+  <div class="face is3d"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+  
+  <!-- Letters and Text -->
+  <h1>CAM CONTROL</h1>
+  <p>Developped By SN2</p>
+  
+  <p class="letter letter-x" aria-hidden="true">reset</p>
+  <p class="letter letter-y" aria-hidden="true">Oui</p>
+  <p class="letter letter-a" aria-hidden="true">Non</p>
+  <p class="letter letter-b" aria-hidden="true">B</p>
+  <p class="letter-start" aria-hidden="true">OFF</p>
+  <p class="letter-select" aria-hidden="true">ON</p>
+  
+  <!-- directional buttons + axis -->
+  <button id="up" onclick="sendMessage('haut')">Up</button>
+  <button id="left" onclick="sendMessage('gauche')">Left</button>
+  <button id="right" onclick="sendMessage('droite')">Right</button>
+  <button id="down" onclick="sendMessage('bas')">Down</button>
+  <div class="axis is3d"><div style="--z:1"></div><div style="--z:2"></div><div style="--z:3"></div><div style="--z:4"></div><div style="--z:5"></div><div style="--z:6"></div></div>
+  
+  <!-- Menu buttons (start/select) -->
+  <button id="select" onclick="sendMessage('allumer')" class="is3d">ON<div style="--z:1"></div><div style="--z:2"></div><div style="--z:3"></div><div style="--z:4"></div></button>
+  <button id="start" onclick="sendMessage('eteindre')" class="is3d">OFF<div style="--z:1"></div><div style="--z:2"></div><div style="--z:3"></div><div style="--z:4"></div></button>
+  
+  <!-- Action buttons -->
+  <div class="buttons">
+    <button id="x" onclick="sendMessage('reset')" class="circle is3d">x<div></div><div></div><div></div><div></div></button>
+    <button id="y" onclick="sendMessage('oui')" class="circle is3d">y<div></div><div></div><div></div><div></div></button>
+    <button id="a" onclick="sendMessage('non')" class="circle is3d">a<div></div><div></div><div></div><div></div></button>
+    <button id="b" class="circle is3d">b<div></div><div></div><div></div><div></div></button>
+  </div>
+</article>
+
 
     <script>
         document.addEventListener("DOMContentLoaded", function(event) {
